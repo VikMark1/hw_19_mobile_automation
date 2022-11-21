@@ -41,6 +41,6 @@ def driver_management():
         options=options,
     )
     browser.config.timeout = 4
-    yield
+    yield driver_management
     attach.add_video(browser)
     browser.quit()
